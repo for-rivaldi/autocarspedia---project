@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: 'Inter', sans-serif; */
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    padding-bottom: 20px;
+    background-color: #DEDEE8;
+}
+
+.section{
+    padding-bottom: 45px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-one{
+    padding: 20px;
+    border-radius: 22px;
+    background-color: #ffffff;
+    box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
+}
+
+.section-two{
+    padding: 20px;
+    border-radius: 22px;
+    background-color: #ffffff;
+    box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
+}
+    
+.section-one table thead tr{
+    background-color: red;
+}

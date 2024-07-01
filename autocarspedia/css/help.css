@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    font-family: 'Inter', sans-serif;
+    background-color: #f1f1f1;
+}
+
+.help{
+    height: auto;
+    padding: 20px 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.help .head-teks{
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.help a{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    
+    position: absolute;
+    left: 110px;
+    top: 50px;
+    text-decoration: none;
+}
+
+.help a i{
+    font-size: 40px;
+    color: #202020;
+    background-color: #fff;
+    border-radius: 50%;
+    border: 3px solid #eaeaea;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 0px 24px;
+}
+
+.help a i:hover{
+    color: #fff;
+    background-color: #FFD700;
+}
+
+.help .head-teks h1{
+    text-align: center;
+    color: #202020;
+}
+
+.help .isi-teks{
+    width: 100%;
+    padding: 30px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+    border-radius: 15px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.help .isi-teks .isi h3{
+    color: #202020;
+}
+
+/* Style P start */
+
+.help .isi-teks .p-bold{
+    font-size: 20px;
+    font-weight: 600;
+    color: #202020;
+}
+
+.help .isi-teks .p-normal{
+    font-size: 15px;
+    font-weight: 400;
+    color: #A7A7A7;
+}
+
+/* Style P end */

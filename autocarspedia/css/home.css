@@ -1,0 +1,417 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+/* Color Selector */
+
+:root{
+--gold: #ffbf00;
+--black: #212121;
+}
+
+/* Color Selector */
+
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'Inter', sans-serif;
+}
+
+body {
+width: 100%;
+height: 100vh;
+}
+
+/* Navbar end */
+.bar-navbar{
+padding: 36px 80px;
+display: flex;
+align-items: center;
+justify-content: space-between;
+background-color: #f1f1f1;
+}
+
+.bar-navbar .logo{
+padding-left: 75px;
+display: flex;
+gap: 10px;
+align-items: center;
+background-color: #f1f1f1;
+}
+
+.bar-navbar .logo img{
+position: absolute;
+left: 62px;
+top: 20px;
+
+width: 100px;
+border-radius: 50px;
+}
+
+.bar-navbar .logo h2{
+font-size: 35px;
+font-weight: 800;
+color: #ffbf00;  
+}
+
+.bar-navbar .logo h2 span{
+font-size: 20px;
+color: #202020;
+}
+
+.bar-navbar .links{
+display: flex;
+gap: 30px;
+align-items: center;
+}
+
+.bar-navbar .links a{
+text-decoration: none;
+font-size: 15px;
+font-weight: 600;
+
+color: #202020;
+border-bottom: 1px solid transparent;
+transition: all .3s ease;
+}
+
+.bar-navbar .links a:hover{
+color: #ffbf00; 
+border-color: #ffbf00;
+}
+
+.bar-navbar .links button{
+padding: 15px 30px;
+border-radius: 12px;
+font-size: 15px;
+font-weight: 600;
+margin-left: 30px;
+
+color: var(--black);
+border: 1px solid transparent;
+background-color: #ffbf00;
+box-shadow: 0 0 20px rgba(255, 191, 0, 0.5);
+}
+
+.bar-navbar .links button:hover{
+color: #3a3a3a;
+border-color: #ffbf00;
+background-color: transparent;
+box-shadow: none;
+}
+/* Navbar end */
+
+/* Header end */
+
+.header{
+width: 100%;
+height: 512px;
+padding: 0 0;
+}
+
+.header .teks{
+width: 100%;
+height: 512px;
+padding-left: 80px;
+position: absolute;
+display: flex;
+align-items: center;
+justify-content: start;
+}
+
+.header .teks .teks-header{
+display: flex;
+gap: 50px;
+flex-direction: column;
+}
+
+.header .teks .teks-header h3{
+font-size: 35px;
+font-weight: 800;
+color: #ffbf00;
+font-family: 'Ubuntu', sans-serif;
+text-shadow: 0 0 15px #202020;
+}
+
+.header .teks .teks-header p{
+font-size: 15px;
+font-weight: 400;
+color: #fdfdfd;
+font-family: 'Inter', sans-serif;
+text-shadow: 0 0 15px #202020;
+}
+
+.header .teks .teks-header a .btn-header{
+width: 40%;
+padding: 14px 20px;
+font-size: 10px;
+font-weight: 800;
+font-family: 'Ubuntu', sans-serif;
+border-radius: 12px;
+border: 2px solid #fbfbfb;
+background-color: transparent;
+box-shadow: 0 0 5px #fbfbfb;
+transition: all .3s ease;
+}
+
+.header .teks .teks-header a .btn-header{
+text-decoration: none;
+letter-spacing: 1px;
+color: #fbfbfb;
+font-weight: 500;
+font-size: 15px;
+}
+
+.header .teks .teks-header a .btn-header:hover{
+border-color: #ffbf00;
+box-shadow: 0 0 10px #ffbf00;
+}
+
+.header .teks .teks-header a:hover .btn-header{
+color: #ffbf00;
+}
+
+.header .bg-header{
+width: 100%;
+height: 512px;
+position: absolute;
+z-index: -999;
+}
+
+.header .bg-header video{
+width: 100%;
+pointer-events: none;
+}
+
+/* Header end */
+
+/* Home end */
+
+.bar-home{
+width: 100%;
+height: 100vh;
+padding: 0 80px;
+
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: space-between;
+}
+
+/* Kategori start */
+
+.bar-home .kategori{
+width: 100%;
+padding-top: 30px; padding-bottom: 20px;
+display: flex;
+gap: 30px;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+}
+
+.bar-home .bar-kategori a{
+text-decoration: none;
+}
+
+.bar-home .kategori .kategori-teks{
+width: auto;
+border-bottom: 3px solid #ffbf00;
+}
+
+.bar-home .kategori .kategori-teks h1{
+font-weight: 800;
+}
+
+.bar-home .kategori .bar-kategori{
+width: 100%;
+display: flex;
+gap: 5rem;
+align-items: center;
+justify-content: center;
+}
+
+.bar-home .kategori .bar-kategori a .bar-items{
+padding: 10px 30px;
+display: flex;
+gap: 10px;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+}
+
+.bar-home .kategori .bar-kategori a .bar-items:hover{
+  transform: scale(1.05);
+}
+
+.bar-home .kategori .bar-kategori a .bar-items p{
+font-size: 18px;
+font-weight: 500;
+color: #212121;
+}
+
+.bar-home .kategori .bar-kategori a .bar-items img{
+width: 120px;
+border-radius: 50%;
+box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+/* Kategori end */
+
+/* Merek start */
+
+.bar-home .merek{
+width: 100%;
+padding: 30px 0;
+display: flex;
+gap: 30px;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+}
+
+
+.bar-home .merek .merek-teks{
+width: auto;
+border-bottom: 3px solid #ffbf00;
+}
+
+.bar-home .merek .merek-teks h1{
+font-weight: 800;
+}
+
+.bar-home .merek .bar-merek{
+width: 100%;
+display: flex;
+gap: 4rem;
+align-items: center;
+justify-content: center;
+}
+
+.bar-home .merek .bar-merek a .merek-items{
+display: flex;
+align-items: center;
+justify-content: center;
+cursor: pointer;
+transition: all .3s ease;
+}
+
+.bar-home .merek .bar-merek a .merek-items img{
+width: 120px;
+border-radius: 15%;
+box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 24px;
+}
+
+.bar-home .merek .bar-merek a .merek-items:hover img{
+transform: scale(1.05);
+}
+
+/* Merek end */
+
+/* Home end */
+
+/* ContactUs start */
+
+.bar-contactus{
+width: 100%;
+margin-top: 70px;
+padding: 130px 80px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+color: #f1f1f1;
+background-color: #212121;
+}
+
+.bar-contactus .head-teks{
+padding-top: 20px;
+width: auto;
+}
+
+.bar-contactus .head-teks h1{
+font-size: 30px;
+font-weight: 600;
+}
+
+.bar-contactus .bar-items{
+padding-top: 20px;
+display: flex;
+align-items: center;
+justify-content: space-between;
+
+}
+
+/* teks one start*/
+
+.bar-contactus .isi-teks-one{
+height: 160px;
+display: flex;
+flex-direction: column;
+align-items: start;
+justify-content: start;
+}
+
+.bar-contactus .isi-teks-one p{
+font-size: 18px;
+}
+
+/* teks one end*/
+
+/* teks two start */
+
+.bar-contactus .isi-teks-two{
+height: 160px;
+display: flex;
+flex-direction: column;
+align-items: start;
+justify-content: start;
+}
+
+.bar-contactus .isi-teks-two p{
+font-size: 15px;
+}
+
+/* teks two start */
+
+/* teks three start */
+
+.bar-contactus .isi-teks-three{
+height: 160px;
+display: flex;
+flex-direction: column;
+align-items: start;
+justify-content: start;
+}
+
+.bar-contactus .isi-teks-three p{
+font-size: 15px;
+}
+
+/* teks three */
+
+.line{
+margin: 20px 0;
+width: 100%;
+height: 3px;
+border-radius: 5%;
+background-color: #3a3a3a;
+}
+
+/* Bawah start */
+
+.bawah{
+width: 100%;
+padding-bottom: 20px;
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+
+.bawah .bawah-isi{
+display: flex;
+gap: 20px;
+}
+
+/* Bawah end */
+
+/* ContactUs end */
